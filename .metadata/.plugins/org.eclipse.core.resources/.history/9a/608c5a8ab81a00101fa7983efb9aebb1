@@ -1,0 +1,10 @@
+package core;
+
+public class P008_Array {
+	public static void main(String[] args) {
+		int a[] = { 1, 2, 3, 4, 5,6,7,8,9,1234,56,4567,124,645,876,3465,5687,9873 };
+		for(int index=0;index<a.length;index++) {
+			System.out.println(a[index]);
+		}
+	}
+}
