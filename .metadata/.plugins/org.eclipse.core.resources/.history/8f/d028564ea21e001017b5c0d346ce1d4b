@@ -1,0 +1,38 @@
+package core;
+//single
+class A{
+	public void classA() {
+		System.out.println("A class");
+	}
+}
+class B extends A{
+	public void classB() {
+		System.out.println("B class");
+	}
+}
+//multilevel
+class C extends B{
+	public void classC() {
+		System.out.println("C class");
+	}
+}
+
+//hierarchical
+class D extends A{
+	public void classD() {
+		System.out.println("class D");
+	}
+}
+
+public class P012_Inheritance {
+	public static void main(String[] args) {
+		B b = new B();
+		b.classA();
+		b.classB();
+		
+		C c= new C();
+		c.classA();
+		c.classB();
+		c.classC();
+	}
+}
