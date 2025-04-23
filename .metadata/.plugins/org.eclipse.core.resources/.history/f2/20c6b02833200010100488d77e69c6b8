@@ -1,0 +1,15 @@
+package core;
+
+class User1{
+	int id;
+	String name;
+	long contact;
+	User1(){
+		System.out.println("def cons");
+	}
+}
+public class P016_Encapsulation {
+	public static void main(String[] args) {
+		
+	}
+}

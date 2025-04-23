@@ -1,0 +1,39 @@
+package core;
+
+abstract class RBI {
+	abstract public void interest();
+
+	abstract public void HL();
+}
+
+class SBI extends RBI {
+	public void interest() {
+		System.out.println("SBI interest : 7%");
+	}
+
+	public void HL() {
+		System.out.println("SBI HL : 7%");
+	}
+
+}
+
+class HDFC extends RBI {
+	public void interest() {
+		System.out.println("HDFC interest : 8%");
+	}
+
+	public void HL() {
+		System.out.println("HDFC HL : 9%");
+	}
+}
+
+public class P014_Abstraction {
+	public static void main(String[] args) {
+		SBI s = new SBI();
+		s.interest();
+		s.HL();
+		HDFC h = new HDFC();
+		h.interest();
+		h.HL();
+	}
+}
