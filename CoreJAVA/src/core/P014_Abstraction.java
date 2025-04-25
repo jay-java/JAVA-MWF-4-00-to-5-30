@@ -38,6 +38,8 @@ public class P014_Abstraction {
 		s.interest();
 		s.HL();
 		s.call();
+		s.staticCall();
+		SBI.staticCall();
 		HDFC h = new HDFC();
 		h.interest();
 		h.HL();
