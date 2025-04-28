@@ -1,0 +1,32 @@
+package core;
+
+class Laptop {
+	private int id;
+	private String model;
+	private long price;
+
+	public Laptop() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Laptop(int id, String model, long price) {
+		super();
+		this.id = id;
+		this.model = model;
+		this.price = price;
+	}
+
+	public String toString() {
+		return "Laptop [id=" + id + ", model=" + model + ", price=" + price + "]";
+	}
+
+}
+
+public class P021_Serialization {
+	public static void main(String[] args) {
+		Laptop l1=  new Laptop(1,"dell",98785);
+		
+		
+	}
+}
